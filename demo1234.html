@@ -69,13 +69,13 @@
         .nav .active{
             background: red;
         }
-        #demo{
+        #rolling{
             color: red;
             display: inline-block;
             position: absolute;
             left: 0;
         }
-        .ex{
+        .roll{
             display: inline-block;
             overflow: hidden ;
             position: relative;
@@ -88,8 +88,8 @@
 <body>
     <div class="top">
         <img src="a15.png" class="img">
-        <div class="ex" id="ex">
-          <div id="demo">[温馨提示]最近有不少不法分子在网上骗人，请大家注意！！！！</div>
+        <div class="roll" id="roll">
+          <div id="rolling">[温馨提示]最近有不少不法分子在网上骗人，请大家注意！！！！</div>
         </div> 
     </div>
     <div class="box" id="box">
@@ -113,11 +113,11 @@
         </ul>
     </div>
     <script type="text/javascript">
-    var spare = 1200;
+    var space = 800;
     setInterval(function(){
-        spare--;
-        if(spare==-420){
-            spare = 1200;
+        space--;
+        if(space==-420){
+            space = 800;
         }
     demo.style.left = spare+"px";
     },10)
